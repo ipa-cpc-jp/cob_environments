@@ -21,6 +21,20 @@ path_of_gridmaps="./local_grid_maps/"
 file_of_gridmaps="local_maps.yaml"
 templ_of_gridmaps="local_map_"
 type_of_gridmaps=".pgm"
+yaml_file=$path_of_gridmaps$file_of_gridmaps
+
+#create file and header if yaml file doesn't exist
+if [ ! -f $yaml_file ]
+then
+	echo "source_id: laserscan" >> $yaml_file
+	echo "for all images:" >> $yaml_file
+	echo "occupied_pixel_value: 0" >> $yaml_file
+	echo "unexplored_pixel_value: 205" >> $yaml_file
+	echo "free_pixel_value: 255" >> $yaml_file
+	echo "resolution: 0.025" >> $yaml_file
+	echo "features:" >> $yaml_file
+fi
+
 
 #parameter via call
 if [ $# != 4 ]
@@ -42,8 +56,10 @@ if [ $# != 4 ]
 
 	origin_mil_x=$((($left - $originx) * $resolution))
 	origin_mil_y=$((($originy-($top+$height)) * $resolution))
-	echo "  - id: "$picture_id >> $path_of_gridmaps$file_of_gridmaps
-	echo "    image: "$templ_of_gridmaps$picture_id$type_of_gridmaps >> $path_of_gridmaps$file_of_gridmaps
-	echo "    origin: ["$((origin_mil_x/1000))"."$((origin_mil_x<0?(-origin_mil_x%1000):origin_mil_x%1000))", "$((origin_mil_y/1000))"."$((origin_mil_y<0?(-origin_mil_y%1000):origin_mil_y%1000))", 0]" >> $path_of_gridmaps$file_of_gridmaps
+	echo "  - id: "$picture_id >> $yaml_file
+	echo "    image: "$templ_of_gridmaps$picture_id$type_of_gridmaps >> $yaml_file
+	echo "    origin: ["$((origin_mil_x/1000))"."$((origin_mil_x<0?(-origin_mil_x%1000):origin_mil_x%1000))", "$((origin_mil_y/1000))"."$((origin_mil_y<0?(-origin_mil_y%1000):origin_mil_y%1000))", 0]" >> $yaml_file
+
+	echo "SUCCESS: gridmap" $templ_of_gridmaps$picture_id$type_of_gridmaps "created!"
 fi
 
