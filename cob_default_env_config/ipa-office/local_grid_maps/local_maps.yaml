@@ -70,4 +70,4 @@ features:
     origin: [0.425, -1.325, 0]
   - id: 21
     image: local_map_21.pgm
-    origin: [0.625, 0.350, 0]
+    origin: [-0.625, 0.350, 0]
