@@ -59,3 +59,15 @@ features:
   - id: 17
     image: local_map_17.pgm
     origin: [-7.1759, 14.6771, 0]
+  - id: 18
+    image: local_map_18.pgm
+    origin: [0.575, 7.800, 0]
+  - id: 19
+    image: local_map_19.pgm
+    origin: [8.400, 0.400, 0]
+  - id: 20
+    image: local_map_20.pgm
+    origin: [0.425, -1.325, 0]
+  - id: 21
+    image: local_map_21.pgm
+    origin: [0.625, 0.350, 0]

@@ -2,7 +2,7 @@
 
 ###
 # inner stairwell
-./create_local_grid_maps_manual.sh 757 530 165 219
+#./create_local_grid_maps_manual.sh 757 530 165 219
 
 ###
 # outer stairwell- north
@@ -19,55 +19,55 @@
 
 ###
 # floor northwest
-./create_local_grid_maps_manual.sh 364 190 333 326
+#./create_local_grid_maps_manual.sh 364 190 333 326
 
 
 ###
 # floor south west - entrance
-./create_local_grid_maps_manual.sh 578 706 153 159
+#./create_local_grid_maps_manual.sh 578 706 153 159
 
 # floor south west - 1st door right
-./create_local_grid_maps_manual.sh 453 766 112 114
+#./create_local_grid_maps_manual.sh 453 766 112 114
 
 # floor south west - 2nd door right
-./create_local_grid_maps_manual.sh 394 878 108 74
+#./create_local_grid_maps_manual.sh 394 878 108 74
 
 # floor south west - 3rd door right
-./create_local_grid_maps_manual.sh 146 946 214 142
+#./create_local_grid_maps_manual.sh 146 946 214 142
 
 # floor south west - 1st door left
-./create_local_grid_maps_manual.sh 551 890 151 312
+#./create_local_grid_maps_manual.sh 551 890 151 312
 
 # floor south west - ending
-./create_local_grid_maps_manual.sh 268 1076 146 93
+#./create_local_grid_maps_manual.sh 268 1076 146 93
 
 
 ###
 # floor south east
-./create_local_grid_maps_manual.sh 923 756 171 150
+#./create_local_grid_maps_manual.sh 923 756 171 150
 
 
 ###
 # floor north east - entrance
-./create_local_grid_maps_manual.sh 903 391 157 158
+#./create_local_grid_maps_manual.sh 903 391 157 158
 
 # floor north east - 1st door right
-./create_local_grid_maps_manual.sh 1050 393 160 162
+#./create_local_grid_maps_manual.sh 1050 393 160 162
 
 # floor north east - 2nd door right
-./create_local_grid_maps_manual.sh 1251 186 249 192
+#./create_local_grid_maps_manual.sh 1251 186 249 192
 
 # floor north east - 1st door left
-./create_local_grid_maps_manual.sh 886 280 171 114
+#./create_local_grid_maps_manual.sh 886 280 171 114
 
 # floor north east - 2nd door left
-./create_local_grid_maps_manual.sh 1043 209 91 112
+#./create_local_grid_maps_manual.sh 1043 209 91 112
 
 # floor north east - 3rd door left
-./create_local_grid_maps_manual.sh 1131 0 141 187
+#./create_local_grid_maps_manual.sh 1131 0 141 187
 
 # floor north east - ending
-./create_local_grid_maps_manual.sh 1284 19 181 159
+#./create_local_grid_maps_manual.sh 1284 19 181 159
 
 
 
